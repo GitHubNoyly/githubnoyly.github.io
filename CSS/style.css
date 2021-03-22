@@ -1,0 +1,90 @@
+/*CSS which will be used for all webpages*/
+
+/*CSS for the body tag.*/
+body{
+    padding: 0%; /* Gets rid of padding on the website so that things like the navbar can fit into the corners withou tleaving any spacing.*/
+    margin: auto;
+    background-color: #BF4E4E;/*Sets the background colour for the website.*/
+    text-align: center; /* Centers all text that is on the webpage.*/
+    color: white; /*Sets the colour of the text to white*/
+    font-family: 'Balsamiq Sans', cursive; /*This sets the defualt font for all text unless changed.*/
+    font-family: 'Lato', sans-serif;
+}
+
+/* CSS for The 'ul' tag which is for the navbar which will be on every webpage.*/
+ul{
+    width: 100%;/*sets the width of the navbar*/
+    position: fixed;/*postition of the navbar stays the same*/
+    top: 0;
+    list-style-type: none; /*Gets rid of the bullet points on the left of the links*/
+    margin: 0;/*gets rid of all margins*/
+    padding: 0;/*gets rid of all paddings*/
+    overflow: hidden;
+    background-color: #5E5B5B;/*Sets the background for everything in */
+    z-index: +1;
+}
+
+/*CSS for everything in a li tag*/
+li{
+    float: right;/*Makes everything with a li tag stick to the right rather than the left*/
+}
+
+/*CSS for everything in a a tag*/
+a{
+display: block;
+    color: white;/*Sets the colour of the text to white*/
+    text-align: center;/* Centers all text that is on the webpage.*/
+    padding: 14px 45px;/*Spaces everything out so that the text can stand out so it is more clear*/
+    text-decoration: none;/*Gets rid of the underline on the links*/
+    font-size: 20px;/*Sets the size of the text for all a tags*/
+    font-family: 'Balsamiq Sans', cursive; /*This sets the type of font for all a tags.*/
+}
+
+/*CSS for when the user hover overs an 'a' tag*/
+li a:hover {
+    background-color: #D49E9E;/*When the user hovers over the 'a', the background changes colour*/
+}
+
+/*CSS for all h1 tags*/
+h1{
+    font-weight: bold;/*Changes all h1 text to be bold. I have done this to make h1 tags stand out to the user*/
+    padding-top: 100px;/*Adds padding to seperate the h1 contents from the previous text*/
+    font-size: 60px;/*Sets the size of the text for all h1 tags*/
+}
+
+/*CSS for all p tags*/
+p{
+    font-size: 22px;/*Sets the size of the text for all p tags*/
+    padding-left: 10%;/*adds a space to the left*/
+    padding-right: 10%;/*adds a space to the right*/
+    line-height: 60px;/*changes the height of each line of text so that the text can be easier to read and stands out more.*/
+    font-weight: bold;/*Changes the p tag text to be bold. I have done this to make p tags stand out to the user*/
+    
+}
+
+/*CSS for the footer class*/
+.footer{
+    float:left;/*Puts everything to the left of the screen*/
+    width: 100%;/*sets the width of the background*/
+    height:auto;/*automatically sets the height of the background so it can fit all it's content*/
+    background-color: #5E5B5B;
+}
+
+/*CSS for the img tag within the footer class*/
+.footer img{
+    float:left;/*Puts the logo to the left of the screen*/
+    width:10%;/*sets the width of the image*/
+    padding-top: 10px;/*adds a space at the top of the image*/
+    padding-bottom: 10px;/*creates a space at the bottom of the image*/
+}
+
+/*CSS for the p tag within the footer class*/
+.footer p{
+    line-height: normal;/*sets the differnce between each line to a normal height*/
+    font-weight: normal;/*makes the text un-bold since it is going to be used for the footer*/
+    font-size: 15px;/*sets the font size of the p tags to 15 pixels*/
+    text-align: left;/*alligns the text within the p tags to the left rather than the center*/
+    padding-top: 20px;/*adds a space at the top of the image*/
+    padding-left: 15%;/*adds a space at the left of the image*/
+    padding-right: 15%;/*adds a space at the right of the image*/
+}

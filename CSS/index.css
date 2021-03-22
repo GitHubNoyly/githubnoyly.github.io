@@ -1,0 +1,39 @@
+/*CSS for the index.html page*/
+
+/*CSS for the border which the slideshow will be held in*/
+.slideshowBorder{
+    width: 100%;/*Sets the how wide the border will be on the webpage*/
+    height: auto;/*Sets the height the border will be on the webpage*/
+    background-color: #3C2A2A;/*sets the background colour for the border the slideshow will be on*/
+    float: left;/*Puts everything to the left of the screen*/
+}
+
+/*CSS for the seperator class which seperates the slideshow items frome the rest of the webpage.*/
+.seperator{
+    width: 100%;/*Sets the how wide the border will be on the webpage*/
+    height: 30px;/*Sets the height the border will be on the webpage*/
+    background-color: #D49E9E;/*sets the background colour for the seperator class.*/
+    float: left;/*Puts everything to the left of the screen*/
+}
+
+/*CSS for the img tag within the ourstory class*/
+.ourStory img{
+    width: 25%;/*Sets the how wide the image will be on the webpage*/
+    padding-left: 50px;/*creates a space to the left of the image*/
+    padding-bottom: 50px;/*creates a space at the bottom of the image*/
+}
+
+/*CSS for all h1 tags within the ourstory class*/
+.ourStory h1{
+    padding-top: 22%;/*Adds padding to seperate the h1 contents from the previous content*/
+}
+
+/*CSS for all p tags within the ourstory class*/
+.ourStory p{
+    text-align: left;/*aligns the text to the left of the webpage*/
+    padding-top: 4%;/*creates a space at the top of the text*/
+    padding-left: 26%;/*creates a space to the left of the text*/
+    padding-right: 10%;/*creates a space to the right of the text*/
+    line-height: 38px;/*changes the height of each line of text so that the text can be easier to read and stands out more.*/
+    font-weight: bold;/*Changes the p tag within the ourstory class to be bold.*/
+}

@@ -1,0 +1,85 @@
+/*Code was taken from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: 35px;/*creates a space at the top to space the content out from other sections within the webpage*/
+  max-width: 1000px;/*sets the maximum width*/
+  position: relative;
+  margin: auto;/*automatically changes the margin depending on the size of the window*/
+}
+
+/*CSS for the mySlides class*/
+.mySlides {
+  display: none;/* Hide the images by default */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;/*changes the pointer when hovering over it*/
+  position: absolute;
+  top: 42%;
+  width: 76px;/*sets the width of the buttons*/
+  margin-top: -22px;/*sets the top margin of the buttons*/
+  padding: 0px;/*sets the padding of the buttons to 0*/
+  color: white;/*sets the colour of the text to white*/
+  font-weight: bold;/*makes the text bold to help make them stand out more*/
+  font-size: 50px;/*sets the font size of the text*/
+  transition: 0.6s ease;/*sets the transition speeds for when clicking on the buttons*/
+  border-radius: 50%;/*rounds the corners of squares or rectangles so that look more circular*/
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 50%;/*rounds the corners of squares or rectangles so that look more circular*/
+}
+
+/*CSS for the buttons when they are hovered over*/
+.prev:hover, .next:hover {
+  background-color: #D49E9E;/*changes the background colour of the button when hovered over*/
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 17px;/*sets the height of the dots*/
+  width: 17px;/*sets the width of the dots*/
+  margin: 0 10px;/*sets the margin of the dots*/
+  background-color: #5E5B5B;/*sets the background colour of the dots*/
+  border-radius: 50%;/*rounds the corners of squares or rectangles so that look more circular*/
+  display: inline-block;
+  transition: background-color 0.6s ease;/*sets the transition speeds for when clicking on the buttons*/
+}
+
+.active, .dot:hover {
+  background-color: #D49E9E;/*changes the background colour of the button when hovered over or if the current picture corresponds with the dots position*/
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;/*sets the type of animation that will be used for the slideshow for apple devices*/
+  -webkit-animation-duration: 1.5s;/*sets the how long it will do that animation for apple devices*/
+  animation-name: fade;/*sets the type of animation that will be used for the slideshow*/
+  animation-duration: 1.5s;/*sets the how long it will do that animation*/
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+img {
+    display: block;
+    margin-left: auto;/*automatically changes the left margin depending on the size of the window*/
+    margin-right: auto;/*automatically changes the right margin depending on the size of the window*/
+  }
+
+  

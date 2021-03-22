@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<lang html>
+
+    <head>
+
+        <title>Hot Beans Web Home Page</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"><!--This links the CSS file for the webpage-->
+        <link rel="stylesheet" type="text/css" href="CSS/index.css"><!--This links the CSS file for parts of the webpage-->
+        <link rel="stylesheet" type="text/css" href="CSS/Slideshow.css"><!--This links the slideshow CSS which is for the slideshow on the webpage-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"><!--This links the fonts used on this webpage-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"><!--This links the fonts used on this webpage-->
+        <meta charset="UTF-8"><!--defines what character set we are using-->
+        <meta name="description" content="Home page for hot beans web"><!--Tell us what the the website is all about-->
+        <meta name="keywords" content="HOT BEANS WEB"><!--Helps search engines know what the topic of the webpage is -->
+        <meta name="author" content="Noyal"><!--Tells us who the author of the webpage is-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--this makes the webpage responsive depending on the device-->
+
+    </head>
+
+    <body>
+        <!--This div tag is for the navbar which is at the top of all the webpages.-->
+        <div class="navbar">
+            <!--This ul tag is used to represent a list of items. The contents of the navbar-->
+            <ul>
+                <!--These are the contents of the navbar-->
+                <li style="float:left;"><a href="index.html">Home</a></li> <!--I have added a 'float:right' so that 'home' will be at the right rather than the left-->
+                <li><a href="contact.html">Contact</a></li><!--This link, when clicked, will lead to the contact webpage-->
+                <li><a href="jobs.html">Job Roles</a></li><!--This link, when clicked, will lead to the jobs webpage-->
+                <li><a href="meetTeam.html">Meet the Team</a></li><!--This link, when clicked, will lead to the meet the team webpage-->
+
+            </ul>
+        </div>
+        <!--This div tag is for the slideshow which is used for the slideshow of pictures on the home page.-->
+        <div class="slideshowBorder">
+            <!--This is where the slideshow contens are-->
+            <div class="slideshow-container">
+
+                <!-- images that will be included within the slideshow -->
+                <div class="mySlides fade">
+                <img src="imgs/PeopleAtTheOffice.jpg" alt="People in the office. Picture from https://pixabay.com/photos/workplace-team-business-meeting-1245776/" style="width:50%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="imgs/Office2.jpg" alt="office 2" style="width:50%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="imgs/WebDev.png" alt="logo" style="width:58%">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="imgs/PeopleWorking.jpg" alt="logo" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                <img src="imgs/HappyCommunity.jpg" alt="logo" style="width:45%">
+                </div>
+
+                <!--the next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!--the dots under the pictures to show what postion the picture the user is on -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            
+            <!--The script which allows the user to select the next and previous pictures on the webpage-->
+            <!--Script was taken from W3 schools https://www.w3schools.com/w3css/w3css_slideshow.asp-->
+            <script>
+                
+                //postion of the picture the user is seeing
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                //Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                //Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
+                
+            </script>
+
+        </div>
+        <!--This is the seperator class which is used just to seperate the slideshow from the rest of the page with a coloured rectangle.-->
+        <div class="seperator"></div>
+        <!--This is the class 'Our Story'-->
+        <div class="ourStory">
+            <h1>Who Are We?</h1><!--h1 tag is used to represent the title of a certain section on the website-->
+            <img src="imgs/building.jpg" alt="building" style="float:left"><!--This image has been positioned to the left-->
+            <p>-We are Hot Beans Web, the number 1 web designing company from London.</p>
+            <p>-Since 2004 we have been providing many users the web designing tools they need to succeed in this industry. From professional tips and tricks to providing website templates that our users can use.</p>
+            <p>-We began this journey in order to help encourage more younger people to get involved with the Website developing industry, an industry that we believe will not be going anywhere, anytime soon, as well as an industry that can provide a good living for many people.</p>
+            <p>-We have helped many younger, and older people get involved with web designing and hope that we can help you as well.</p>
+        </div>
+        <!--This is the class for WhatWeDo-->
+        <div class="WhatWeDo">
+            <h1>What We Do</h1><!--h1 tag is used to represent the title of a certain section on the website-->
+            <p>-Hot Beans Web helps users to create websites by providing users with website templates as well as providing users with useful tips that will help them rise to the top of the website designing industry.</p>
+            <p>-We help users create websites that are compatible with laptops, mobile phones, tablets, and desktop PCs.</p>
+            <p>-We aim to be the biggest website designing business on the market so that we can help more people get into this industry.</p>
+        </div>
+        <!--This is the class for WhereToFindUs-->
+        <div class="WhereToFindUs">
+            <h1>Where to Find Us</h1><!--h1 tag is used to represent the title of a certain section on the website-->
+            <!--This is code for a  map from google maps to show a map of london-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33404.73046306274!2d-0.09482891945487779!3d51.51649169759372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604aca207bc87%3A0x3a1d3501a9af5fde!2sSt.%20Paul&#39;s%20Cathedral!5e0!3m2!1sen!2suk!4v1616168678637!5m2!1sen!2suk" width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" title="Map of a cathedrial in London"></iframe>
+        </div>
+        <!--This is the class for the footer-->
+        <div class="footer">
+            <!--this is a link for a picture, when pressed, will take you to the top of the webpage-->
+            <a href="#top">
+                <img src="imgs/HotBeansWebLogo.png" alt="Logo for HOT BEANS WEB"><!--Logo of Hot Beans Web-->
+            </a>
+            <!--p tags for the footer-->
+            <p>Hot beans web is a business that is willing to take on any of your website design needs. We strive to help others by giving them guidance through our web designing programs. If you feel like joining the Hot Benas Web family then apply at the job roles page.</p>
+            <p>EMAIL US AT- enquiries@hotbeans.com<br>PHONE US AT - 0179542900<br>OR MEET US IN PERSON : St. Paul's Churchyard, London EC4M 8AD</p>
+        </div>
+    </body>
+
+</html>

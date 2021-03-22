@@ -1,0 +1,84 @@
+/*CSS for job.html*/
+
+/*CSS for the webJob class*/
+.webJob{
+    padding-top: 1%;/*creates a space at the top to seperate it from the other parts of content on the page*/
+    padding-left: 25%;/*Creates a space on the left of the div tag*/
+}
+
+/*CSS for the h1 tag within the webJob class*/
+.webJob h1{
+    text-align: left;/*aligns the text to the left of the div tag*/
+    font-size: 50px;/*sets the size of the font to make it stand out more since it is the job title*/
+    padding: 0;/*gets rid of all the padding*/
+    margin: 0;/*gets rid of all margins*/
+    padding-right: 50%;/*creates a space to the right of the div tag*/
+    width: auto;/*automatically sets the width of the h1 tag depending on the size of the window*/
+    height: auto;/*automatically sets the height of the h1 tag depending on the size of the window*/
+    box-sizing: border-box;
+    float: left;/*floats the h1 tag to the left*/
+}
+
+/*CSS for the p tag within the description tag*/
+.description p{
+    font-weight: normal;/*makes the text normal rather than being bold*/
+    text-align: left;/*aligns the text to the left rather than the center*/
+    font-size: 16px;/*sets the size of the font*/
+    padding: 0;/*gets rid of all the padding*/
+    padding-bottom: 75px;/*creates a space at the bottom of the text*/
+    line-height: normal;/*sets the height differnece for each line of text*/
+    width: auto;/*automatically sets the width of the h1 tag depending on the size of the window*/
+    height: auto;/*automatically sets the height of the h1 tag depending on the size of the window*/
+    box-sizing: border-box;   
+    float: left;/*floats the h1 tag to the left*/
+}
+
+/*CSS for the a tag within the applyButton class*/
+.applyButton a{
+    width: auto;/*automatically sets the width of the h1 tag depending on the size of the window*/
+    height: auto;/*automatically sets the height of the h1 tag depending on the size of the window*/
+    padding: 2%;/*creates spacing around the text*/
+    box-sizing: border-box;   
+    float: left;/*floats the h1 tag to the left*/
+    background-color: #D49E9E;/*sets the background colour*/
+}
+
+/*CSS for the applyButton class*/
+.applyButton{
+    padding-left: 50%;/*creates a space to the left of the div tag*/
+    padding-right: 30%;/*creates a space to the left of the div tag*/
+}
+
+/*CSS for when the user hovers over the button*/
+.applyButton a:hover{
+    background-color: #5E5B5B;/*when the user hovers over the button, the button will change colour*/
+}
+
+/*CSS for the jobs class*/
+.jobs{
+    padding-top: 1%;/*creates a space to the top of the div tag*/
+    padding-left: 25%;/*creates a space to the left of the div tag*/
+}
+
+/*CSS for all the h1 tags within the class jobs*/
+.jobs h1{
+    text-align: left;/*aligns the text to the left of the div tag*/
+    font-size: 50px;/*sets the size of the font to make it stand out more since it is the job title*/
+    padding: 0;/*gets rid of all the padding*/
+    margin: 0;/*gets rid of all margins*/
+    padding-right: 50%;/*creates a space to the right of the div tag*/
+    width: auto;/*automatically sets the width of the h1 tag depending on the size of the window*/
+    height: auto;/*automatically sets the height of the h1 tag depending on the size of the window*/
+    box-sizing: border-box;
+    float: left;/*floats the h1 tag to the left*/
+}
+
+.applyButton p{
+    line-height: normal;/*sets the height differnece for each line of text*/
+    width: auto;/*automatically sets the width of the h1 tag depending on the size of the window*/
+    height: auto;/*automatically sets the height of the h1 tag depending on the size of the window*/
+    padding: 2%;/*Creates a space around the p tag*/
+    box-sizing: border-box;   
+    float: left;/*floats the p tag to the left*/
+    background-color: #D49E9E;/*sets the background colour*/
+}

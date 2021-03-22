@@ -1,0 +1,58 @@
+/*CSS for application.html*/
+
+
+.webDev{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+}
+
+
+.webDev p{
+    text-align: left;
+    font-size: 20px;
+    width: auto;
+    line-height: normal;
+    padding-bottom: 2%;
+}
+
+
+.webDev img{
+    width: 60%;
+    border-radius: 2%;
+}
+
+
+/* CSS for The 'ul' tag which is for the navbar which will be on every webpage.*/
+.applicationNavBar ul{
+    float: left;
+    width: 100%;/*sets the width of the navbar*/
+    position: fixed;/*postition of the navbar stays the same*/
+    top: 6%;
+    list-style-type: none; /*Gets rid of the bullet points on the left of the links*/
+    margin: 0;/*gets rid of all margins*/
+    padding: 0;/*gets rid of all paddings*/
+    overflow: hidden;
+    background-color: #D49E9E;/*When the user hovers over the 'a', the background changes colour*/
+    z-index: 0;
+}
+
+/*CSS for everything in a li tag*/
+.applicationNavBar li{
+    padding-right: 8%;
+}
+
+/*CSS for everything in a a tag*/
+.applicationNavBar a{
+    display: block;
+    color: white;/*Sets the colour of the text to white*/
+    text-align: center;/* Centers all text that is on the webpage.*/
+    padding: 14px 45px;/*Spaces everything out so that the text can stand out so it is more clear*/
+    text-decoration: none;/*Gets rid of the underline on the links*/
+    font-size: 20px;/*Sets the size of the text for all a tags*/
+    font-family: 'Balsamiq Sans', cursive; /*This sets the type of font for all a tags.*/
+}
+
+/*CSS for when the user hover overs an 'a' tag*/
+.applicationNavBar li a:hover {
+    background-color: #5E5B5B;/*Sets the background for everything in */}

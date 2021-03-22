@@ -1,0 +1,118 @@
+/*CSS for the application form*/
+
+label{
+    font-weight: bold;/*Changes all h1 text to be bold. I have done this to make h1 tags stand out to the user*/
+    padding-top: 100px;/*Adds padding to seperate the h1 contents from the previous text*/
+    font-size: 60px;/*Sets the size of the text for all h1 tags*/
+    display: block;
+}
+#appply {
+    position: absolute;
+    margin-top: 1.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: myFirstFont;
+    font-size: 2.5vw;
+}
+#fn {/*First Name, Phone number/telephone, city*/
+    margin: 3% 0 0 5%;
+    height: 2.5vw;
+    width: 42.5%;
+    font-family: mySecondFont;
+    font-size: 1.95vw;
+    text-indent: 0.5%;/*Indents the inputted text so it is not right on the edge when first typed*/
+    text-align-last: center;/*Aligns the placeholder text centered and inputed text*/
+}
+
+#sn {/*Second Name, Email, postcode*/
+    margin: 3% 0 0 5%;
+    width: 42.5%;
+    height: 2.5vw;
+    font-family: mySecondFont;
+    font-size: 1.95vw;
+    text-indent: 0.5%;/*Indents the inputted text so it is not right on the edge when first typed*/
+    text-align-last: center;/*Aligns the placeholder text centered and inputed text*/
+    clear: right;/*Stop the next input box appearing to the right of it*/
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /*Removes arrow from the side that would otherwise increase the number*/
+  margin: 0;
+}
+#an{/*Address name*/
+    margin: 3% 0 5% 5%;
+    height: 2.5vw;
+    width: 90%;
+    font-family: mySecondFont;
+    font-size: 2vw;
+    text-align-last: center;/*Aligns the placeholder text centered and inputed text*/
+}
+#cn{/*List job, address*/
+    margin: 3% 0 0 5%;
+    height: 20vw;
+    width: 90%;
+    font-family: mySecondFont;
+    font-size: 2vw;
+    text-align-last: center;/*Aligns the placeholder text centered and inputed text*/
+}
+#n1 {
+    position: absolute;
+    left: 26.5%;
+    transform: translateX(25%);
+    margin-top: 9%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n2 {
+    position: absolute;
+    right: 24%;
+    transform: translateX(-50%);
+    margin-top: 0.75%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n3{
+    position: absolute;
+    left: 22.5%;
+    transform: translateX(50%);
+    margin-top: 5.5%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n4{
+    position: absolute;
+    right: 26.5%;
+    transform: translateX(-50%);
+    margin-top: 0.75%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n5{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5.5%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n6{
+    position: absolute;
+    left: 30%;
+    margin-top: 5.5%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n7{
+    position: absolute;
+    right: 27.5%;
+    margin-top: 0.6%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
+#n8{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5.5%;
+    font-family: mySecondFont;
+    font-size: 1.2vw;
+}
